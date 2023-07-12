@@ -1,5 +1,149 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Gilroy";
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#part1 {
+  position: relative;
+  width: 35%;
+  height: 100%;
+}
+
+#part2 {
+  width: 65%;
+  background-color: green;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 30px;
+  align-items: center;
+}
+
+nav > span {
+  padding-left: 10px;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+}
+
+ul > i {
+  color: royalblue;
+}
+
+#top {
+  width: 100%;
+  height: 50%;
+  background-color: pink;
+  display: flex;
+}
+
+#bottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: auto;
+  background-position: center;
+}
+
+#lefttop {
+  width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+#righttop {
+  width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#text h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+#text p {
+  opacity: 0.6;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#text a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #main #part1 {
+    width: 100%;
+  }
+  #main #part2 {
+    width: 100%;
+  }
+  #text {
+    padding-top: 50px;
+  }
+
+  #text h1 {
+    font-size: 45px;
+    font-weight: 900;
+  }
+  #text p {
+    font-size: 15px;
+    margin-top: 6px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  #text a {
+    font-size: 15px;
+    padding-top: 5px;
+  }
 }
