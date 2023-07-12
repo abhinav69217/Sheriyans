@@ -51,7 +51,7 @@ body {
   padding-top: 16px;
   white-space: nowrap;
 }
-#center h1 {
+h1 {
   font-size: 85px;
   font-family: "Monument Extended", sans-serif;
   text-transform: uppercase;
@@ -64,7 +64,17 @@ body {
   z-index: 9999;
   transform: translate(-50%, 0);
 }
-#center h2 {
+
+h1::before {
+  content: "Happy Socks";
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  -webkit-text-stroke-color: black;
+}
+/* #center h2 {
   font-size: 85px;
   font-family: "Monument Extended", sans-serif;
   text-transform: uppercase;
@@ -80,7 +90,7 @@ body {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
   color: transparent;
-}
+} */
 
 #btn1 {
   padding: 17px 36px;
