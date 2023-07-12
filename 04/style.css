@@ -1,0 +1,186 @@
+@import url("https://fonts.cdnfonts.com/css/acumin-pro");
+@import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acumin Pro", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #fdefec;
+  position: relative;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+#nav h5 {
+  font-size: 18px;
+  border: 1.5px solid;
+  border-radius: 50px;
+  margin: 0 7px;
+  padding: 4px 9px;
+  font-weight: 500;
+}
+
+#center {
+  height: calc(100% - 100px);
+  width: 100%;
+  position: relative;
+  padding: 10px 20px;
+}
+
+#heading {
+  padding-top: 16px;
+  white-space: nowrap;
+}
+#center h1 {
+  font-size: 85px;
+  font-family: "Monument Extended", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 5px;
+  z-index: 9999;
+  transform: translate(-50%, 0);
+}
+#center h2 {
+  font-size: 85px;
+  font-family: "Monument Extended", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  padding-top: 17px;
+  left: 49.3%;
+  top: 1px;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  font-weight: 900;
+  font-style: italic;
+  transform: translate(-50%, 0);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+}
+
+#btn1 {
+  padding: 17px 36px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #ccf17f;
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  top: 27%;
+  font-weight: 700;
+  transform: rotate(-9deg);
+}
+
+#btn2 {
+  padding: 17px 36px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #ccf17f;
+  border-radius: 50%;
+  position: absolute;
+  left: 7%;
+  bottom: 7%;
+  transform: rotate(9deg);
+}
+
+#image {
+  position: absolute;
+  top: 58%;
+  height: 65%;
+  border-radius: 50%;
+  width: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+#image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 80% 90%;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+#socks1 {
+  height: 180px;
+  width: 180px;
+  background-image: url(https://media.happysocks.com/images/BDO02-6650.png?width=414&format=pjpg&quality=60&auto=webp&bg-color=fafafa);
+  border: 2px solid black;
+  position: absolute;
+  top: 28%;
+  left: 9%;
+  z-index: 99;
+  background-size: cover;
+  background-position: bottom;
+  transform: rotate(15deg);
+}
+
+#socks1::after {
+  content: "";
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  border: 2px solid black;
+  right: -15px;
+  top: -15px;
+  background-image: url(https://media.happysocks.com/images/BDO02-6650.png?width=414&format=pjpg&quality=60&auto=webp&bg-color=fafafa);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+#socks2 {
+  height: 180px;
+  width: 180px;
+  background-image: url(https://media.happysocks.com/images/ATPIF14-1300_M_small.jpg?width=414&format=pjpg&quality=60&auto=webp&bg-color=fafafa);
+  border: 2px solid black;
+  position: absolute;
+  bottom: 7%;
+  right: 16%;
+  z-index: 99;
+  background-size: cover;
+  background-position: bottom;
+  transform: rotate(-15deg);
+}
+
+#socks2::after {
+  content: "";
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  border: 2px solid black;
+  top: -15px;
+  left: -15px;
+  background-image: url(https://media.happysocks.com/images/ATPIF14-1300_M_small.jpg?width=414&format=pjpg&quality=60&auto=webp&bg-color=fafafa);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
