@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+html,
+body {
+  height: 100%;
+  width: 100%;
+} */
+
+#main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#top {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url(https://images.unsplash.com/photo-1688920556232-321bd176d0b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: 50% 65%;
+}
+#bottom {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+}
+
+#b1,
+#b2,
+#b3,
+#b4 {
+  width: 25%;
+  min-height: inherit;
+}
+#overlay {
+  width: 100%;
+  min-height: inherit;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.489);
+}
+
+#text {
+  position: absolute;
+  display: flex;
+  bottom: 20%;
+  width: 100%;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+
+#text h1 {
+  font-size: 5vw;
+  font-weight: 500;
+}
+#textright {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+}
+
+#textright p {
+  font-size: 12.6px;
+  width: 40%;
+  font-weight: 500;
+}
+
+#b1 {
+  padding: 30px;
+}
+
+#b1 p {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+#b2 {
+  background-image: url(https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvcmVzdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#b3top,
+#b3bottom {
+  width: 100%;
+  min-height: 20vh;
+}
+
+#b3top {
+  padding: 30px;
+  color: white;
+  background-color: orangered;
+}
+#b3top p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#b3bottom {
+  background-image: url(https://media.istockphoto.com/id/854515924/photo/aerial-view-of-amazon-rainforest-south-america.webp?b=1&s=170667a&w=0&k=20&c=lYFrYR3FxebiAz07jlgl-U6Bhg1iiQHbnZGX6eupOLw=);
+  background-position: 50% 60%;
+  background-size: cover;
+}
+
+#b4 {
+  padding: 30px;
+  background-color: #444;
+  color: #fff;
+}
+
+#notf {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+#notf #photo {
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  background-color: red;
+}
+
+#notf p {
+  width: 80%;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  #overlay #text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #text h1 {
+    font-size: 10vw;
+  }
+
+  #textright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #textright p {
+    width: initial;
+    margin-top: 20px;
+  }
+  #icons {
+    margin-top: 20px;
+  }
+
+  #bottom {
+    flex-direction: column;
+  }
+  #b1,
+  #b2,
+  #b3,
+  #b4 {
+    width: 100%;
+  }
+
+  #b3 {
+    flex-direction: column;
+    min-height: 40vh;
+  }
+  #bottom {
+    min-height: 20vh;
+  }
+  #b3bottom {
+    min-height: 40vh;
+  }
+  #b2 {
+    min-height: 40vh;
+  }
+}
