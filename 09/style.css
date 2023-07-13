@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(247 246 238);
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#nav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rebeccapurple; */
+}
+
+#nav > h3 {
+  padding-left: 50px;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+span {
+  font-weight: 900;
+}
+
+ul {
+  display: flex;
+}
+
+ul > li {
+  padding-right: 45px;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+}
+#heading {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#heading h1 {
+  font-size: 56px;
+  font-family: "PlayFair Display";
+}
+
+#heading p {
+  width: 50%;
+  font-size: 18px;
+  max-width: 48%;
+  margin: 24px 0px;
+}
+
+#heading button {
+  padding: 13px 24px;
+  border-radius: 100px;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+}
+
+#illus {
+  width: 100%;
+}
+#illus img {
+  width: 100%;
+}
+
+#details {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-between;
+  padding: 5vw 5vw;
+}
+
+#dleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 48%;
+  border-right: 1.5px solid rgba(0, 0, 0, 0.436);
+  text-align-last: right;
+  padding-right: 50px;
+}
+
+#smline {
+  width: 5%;
+  height: 2px;
+  background-color: black;
+  margin: 20px;
+}
+
+#dleft p {
+  width: 40%;
+  font-size: 14px;
+  text-align: right;
+}
+
+#dright {
+  width: 48%;
+}
+
+#feature {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#fdetails h3 {
+  padding-top: 3px;
+}
+
+#fdetails p {
+  margin-top: 6px;
+  font-size: 12px;
+  width: 60%;
+}
+
+.ri-service-line {
+  padding-top: 7px;
+  font-weight: 500;
+}
