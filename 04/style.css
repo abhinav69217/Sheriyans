@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Acumin Pro", sans-serif;
+  cursor: none;
 }
 
 html,
@@ -193,4 +194,31 @@ h1::before {
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.innercursor {
+  position: fixed;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: width 0.3s, height 0.5s;
+  z-index: 999999;
+  top: 50px;
+  /* transition: width 0.5s ; */
+}
+
+.grow {
+  width: 25px;
+  height: 25px;
+  transition: width 0.5s, height 0.5s;
+  background-color: white;
 }
